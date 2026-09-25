@@ -1,0 +1,10 @@
+flowchart TD
+  J1[Nhận task trên Jira<br/>trong Sprint] --> J2[Phân tích yêu cầu<br/>tài liệu API, thiết kế Figma]
+  J2 --> J3[Tạo nhánh Git<br/>từ nhánh phát triển]
+  J3 --> J4[Lập trình component,<br/>tích hợp API]
+  J4 --> J5[Tự kiểm tra,<br/>viết unit test]
+  J5 --> J6[Tạo Merge Request]
+  J6 --> J7{Code review<br/>mentor / team}
+  J7 -- Cần sửa --> J4
+  J7 -- Đạt --> J8[Merge, cập nhật<br/>trạng thái Jira]
+  J8 --> J9[Kiểm thử tích hợp<br/>với back-end]

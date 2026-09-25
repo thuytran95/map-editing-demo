@@ -1,0 +1,25 @@
+flowchart LR
+  subgraph TOOL["Tool biên tập bản đồ - C++"]
+    T1[Xử lý dữ liệu không gian<br/>GEOS / công cụ GIS]
+  end
+  subgraph FE["Web front-end - ReactJS  (phạm vi thực tập)"]
+    direction TB
+    F1[Giao diện Material UI]
+    F2[Bản đồ OpenLayers]
+    F3[State Jotai]
+    F4[Gọi API - axios]
+    F1 --- F3
+    F2 --- F3
+    F3 --- F4
+  end
+  subgraph BE["Back-end - Node.js"]
+    B1[REST API<br/>quản lý, xử lý dữ liệu]
+  end
+  DB[(Kho dữ liệu bản đồ)]
+  U([Người dùng<br/>trình duyệt]) --> F1
+  F4 -- HTTP / JSON - GeoJSON --> B1
+  T1 -- API trao đổi dữ liệu --> B1
+  B1 --> DB
+  style FE fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+  style BE fill:#e8f5e9,stroke:#2e7d32
+  style TOOL fill:#fff8e1,stroke:#f9a825

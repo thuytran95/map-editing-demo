@@ -1,0 +1,5 @@
+node_modules/
+dist/
+server/data/features.json
+*.log
+.DS_Store

@@ -1,0 +1,33 @@
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+.map-container {
+  position: absolute;
+  inset: 0;
+}
+
+/* Thanh công cụ nổi ở giữa phía trên bản đồ */
+.map-toolbar {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  z-index: 2;
+  max-width: 90%;
+}
+
+/* Tọa độ con trỏ chuột (EPSG:4326) */
+.mouse-position {
+  position: absolute;
+  right: 8px;
+  bottom: 28px;
+  padding: 2px 8px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  font: 12px monospace;
+}

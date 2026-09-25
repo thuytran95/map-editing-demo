@@ -1,0 +1,27 @@
+classDiagram
+  class Feature {
+    +string type = "Feature"
+    +string id
+    +Geometry geometry
+    +Properties properties
+  }
+  class Geometry {
+    +string type  Point | LineString | Polygon
+    +number[] coordinates  [kinh độ, vĩ độ] EPSG:4326
+  }
+  class Properties {
+    +string name  bắt buộc, ≤ 100 ký tự
+    +string category  building|road|park|water|poi
+    +string status  draft|active|archived
+    +string description
+    +Attribute[] attributes
+    +datetime createdAt
+    +datetime updatedAt
+  }
+  class Attribute {
+    +string key  duy nhất trong đối tượng
+    +string value
+  }
+  Feature "1" *-- "1" Geometry
+  Feature "1" *-- "1" Properties
+  Properties "1" *-- "0..*" Attribute

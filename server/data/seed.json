@@ -1,0 +1,509 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "f001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.7802,
+              21.0301
+            ],
+            [
+              105.7814,
+              21.0301
+            ],
+            [
+              105.7814,
+              21.0309
+            ],
+            [
+              105.7802,
+              21.0309
+            ],
+            [
+              105.7802,
+              21.0301
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Tòa nhà văn phòng A1",
+        "category": "building",
+        "status": "active",
+        "description": "Tòa nhà mẫu dùng để kiểm thử chức năng chỉnh sửa vùng",
+        "attributes": [
+          {
+            "key": "so_tang",
+            "value": "25"
+          },
+          {
+            "key": "nam_xay_dung",
+            "value": "2018"
+          }
+        ],
+        "createdAt": "2026-09-01T08:00:00.000Z",
+        "updatedAt": "2026-09-01T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.7831,
+              21.0288
+            ],
+            [
+              105.7841,
+              21.0288
+            ],
+            [
+              105.7841,
+              21.0298
+            ],
+            [
+              105.7831,
+              21.0298
+            ],
+            [
+              105.7831,
+              21.0288
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Tòa nhà chung cư B2",
+        "category": "building",
+        "status": "active",
+        "description": "Khối nhà ở cao tầng (dữ liệu giả lập)",
+        "attributes": [
+          {
+            "key": "so_tang",
+            "value": "30"
+          }
+        ],
+        "createdAt": "2026-09-02T08:00:00.000Z",
+        "updatedAt": "2026-09-02T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.7765,
+              21.0262
+            ],
+            [
+              105.7783,
+              21.0262
+            ],
+            [
+              105.7783,
+              21.0274
+            ],
+            [
+              105.7765,
+              21.0274
+            ],
+            [
+              105.7765,
+              21.0262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Nhà thi đấu C3",
+        "category": "building",
+        "status": "draft",
+        "description": "Đang chờ xác nhận ranh giới",
+        "attributes": [],
+        "createdAt": "2026-09-03T08:00:00.000Z",
+        "updatedAt": "2026-09-03T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f004",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.77,
+              21.018
+            ],
+            [
+              105.776,
+              21.0175
+            ],
+            [
+              105.7775,
+              21.0215
+            ],
+            [
+              105.7735,
+              21.024
+            ],
+            [
+              105.7695,
+              21.022
+            ],
+            [
+              105.77,
+              21.018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Khu cây xanh D1",
+        "category": "park",
+        "status": "active",
+        "description": "Khu công viên - cây xanh (dữ liệu giả lập)",
+        "attributes": [
+          {
+            "key": "dien_tich_cay_xanh",
+            "value": "70%"
+          }
+        ],
+        "createdAt": "2026-09-04T08:00:00.000Z",
+        "updatedAt": "2026-09-04T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f005",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.788,
+              21.024
+            ],
+            [
+              105.7895,
+              21.024
+            ],
+            [
+              105.7895,
+              21.025
+            ],
+            [
+              105.788,
+              21.025
+            ],
+            [
+              105.788,
+              21.024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Vườn hoa E2",
+        "category": "park",
+        "status": "active",
+        "description": "",
+        "attributes": [],
+        "createdAt": "2026-09-05T08:00:00.000Z",
+        "updatedAt": "2026-09-05T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.779,
+              21.015
+            ],
+            [
+              105.784,
+              21.0145
+            ],
+            [
+              105.7855,
+              21.0175
+            ],
+            [
+              105.782,
+              21.0195
+            ],
+            [
+              105.7785,
+              21.018
+            ],
+            [
+              105.779,
+              21.015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Hồ điều hòa F1",
+        "category": "water",
+        "status": "active",
+        "description": "Hồ điều hòa thoát nước",
+        "attributes": [
+          {
+            "key": "do_sau_tb_m",
+            "value": "2.5"
+          }
+        ],
+        "createdAt": "2026-09-06T08:00:00.000Z",
+        "updatedAt": "2026-09-06T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f007",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.77,
+            21.013
+          ],
+          [
+            105.776,
+            21.014
+          ],
+          [
+            105.782,
+            21.0132
+          ],
+          [
+            105.788,
+            21.0145
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Kênh thoát nước F2",
+        "category": "water",
+        "status": "archived",
+        "description": "Đã được cải tạo - lưu trữ",
+        "attributes": [],
+        "createdAt": "2026-09-07T08:00:00.000Z",
+        "updatedAt": "2026-09-07T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f008",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.768,
+            21.028
+          ],
+          [
+            105.775,
+            21.0283
+          ],
+          [
+            105.783,
+            21.0279
+          ],
+          [
+            105.792,
+            21.0282
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Trục đường G1",
+        "category": "road",
+        "status": "active",
+        "description": "Trục giao thông chính (giả lập)",
+        "attributes": [
+          {
+            "key": "so_lan_xe",
+            "value": "6"
+          },
+          {
+            "key": "be_rong_m",
+            "value": "40"
+          }
+        ],
+        "createdAt": "2026-09-08T08:00:00.000Z",
+        "updatedAt": "2026-09-08T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f009",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.78,
+            21.02
+          ],
+          [
+            105.7802,
+            21.025
+          ],
+          [
+            105.7805,
+            21.033
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Đường nội khu G2",
+        "category": "road",
+        "status": "active",
+        "description": "",
+        "attributes": [
+          {
+            "key": "so_lan_xe",
+            "value": "2"
+          }
+        ],
+        "createdAt": "2026-09-09T08:00:00.000Z",
+        "updatedAt": "2026-09-09T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f010",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.7705,
+            21.0195
+          ],
+          [
+            105.773,
+            21.0205
+          ],
+          [
+            105.776,
+            21.02
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Đường dạo H1",
+        "category": "road",
+        "status": "draft",
+        "description": "Đường dạo trong khu cây xanh",
+        "attributes": [],
+        "createdAt": "2026-09-10T08:00:00.000Z",
+        "updatedAt": "2026-09-10T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f011",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.779,
+          21.029
+        ]
+      },
+      "properties": {
+        "name": "Trạm xe buýt P1",
+        "category": "poi",
+        "status": "active",
+        "description": "Điểm dừng xe buýt",
+        "attributes": [
+          {
+            "key": "tuyen",
+            "value": "01, 02"
+          }
+        ],
+        "createdAt": "2026-09-11T08:00:00.000Z",
+        "updatedAt": "2026-09-11T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f012",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7845,
+          21.0265
+        ]
+      },
+      "properties": {
+        "name": "Bãi đỗ xe P2",
+        "category": "poi",
+        "status": "active",
+        "description": "",
+        "attributes": [
+          {
+            "key": "suc_chua",
+            "value": "200"
+          }
+        ],
+        "createdAt": "2026-09-12T08:00:00.000Z",
+        "updatedAt": "2026-09-12T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f013",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7815,
+          21.031
+        ]
+      },
+      "properties": {
+        "name": "Trạm sạc xe điện P3",
+        "category": "poi",
+        "status": "draft",
+        "description": "",
+        "attributes": [],
+        "createdAt": "2026-09-13T08:00:00.000Z",
+        "updatedAt": "2026-09-13T08:00:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f014",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.775,
+          21.023
+        ]
+      },
+      "properties": {
+        "name": "Nhà chờ P4",
+        "category": "poi",
+        "status": "archived",
+        "description": "Đã dỡ bỏ",
+        "attributes": [],
+        "createdAt": "2026-09-14T08:00:00.000Z",
+        "updatedAt": "2026-09-14T08:00:00.000Z"
+      }
+    }
+  ]
+}

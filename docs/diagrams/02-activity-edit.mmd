@@ -1,0 +1,15 @@
+flowchart TD
+  S((Bắt đầu)) --> A[Chọn đối tượng trên bản đồ hoặc danh sách]
+  A --> B[Bật công cụ Sửa hình]
+  B --> C[Kéo / thêm / xóa đỉnh trên bản đồ<br/>OpenLayers Modify]
+  C --> D[Chuyển tọa độ EPSG:3857 → GeoJSON EPSG:4326<br/>lưu vào bản nháp - draftFeatureAtom]
+  D --> E[Form hiển thị cảnh báo hình học đã thay đổi<br/>và số đo mới]
+  E --> F{Người dùng chọn}
+  F -- Hủy --> G[Xóa bản nháp, khôi phục hình cũ] --> Z
+  F -- Lưu --> H{Kiểm tra dữ liệu phía client hợp lệ?}
+  H -- Không --> I[Hiển thị lỗi theo từng trường] --> E
+  H -- Có --> J[Gửi PUT /api/features/:id - axios]
+  J --> K{Server kiểm tra lại hợp lệ?}
+  K -- Không - 400 --> L[Ánh xạ lỗi server về form] --> E
+  K -- Có - 200 --> M[Cập nhật featuresAtom, làm mới danh sách,<br/>thông báo thành công]
+  M --> Z((Kết thúc))

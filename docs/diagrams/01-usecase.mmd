@@ -1,0 +1,28 @@
+flowchart LR
+  BT(["👤 Người biên tập<br/>bản đồ"]):::actor
+  QL(["👤 Quản trị /<br/>kiểm duyệt dữ liệu"]):::actor
+  subgraph WEB["Hệ thống web tương tác bản đồ (phần front-end)"]
+    direction TB
+    U1([Xem bản đồ và các lớp đối tượng])
+    U2([Tìm kiếm, lọc đối tượng])
+    U3([Chọn, xem thuộc tính đối tượng])
+    U4([Tạo mới đối tượng: điểm, đường, vùng])
+    U5([Chỉnh sửa hình học đối tượng])
+    U6([Cập nhật thuộc tính - form động])
+    U7([Xóa đối tượng])
+    U8([Kiểm tra dữ liệu trước khi lưu]):::inc
+  end
+  BT --- U1
+  BT --- U2
+  BT --- U3
+  BT --- U4
+  BT --- U5
+  BT --- U6
+  QL --- U7
+  QL --- U3
+  U4 -. "«include»" .-> U8
+  U5 -. "«include»" .-> U8
+  U6 -. "«include»" .-> U8
+  classDef actor fill:#fff3e0,stroke:#e65100,stroke-width:2px
+  classDef inc fill:#e8f5e9,stroke:#2e7d32
+  style WEB fill:#f5f9ff,stroke:#1565c0,stroke-width:2px

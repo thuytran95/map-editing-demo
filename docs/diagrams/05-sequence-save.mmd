@@ -1,0 +1,26 @@
+sequenceDiagram
+  autonumber
+  actor U as Người biên tập
+  participant M as MapView (OpenLayers)
+  participant S as Jotai store
+  participant F as FeatureForm
+  participant H as useFeatureActions
+  participant A as REST API (Node.js)
+  U->>M: Kéo đỉnh của vùng (Modify)
+  M->>M: modifyend: chuyển 3857 → GeoJSON 4326
+  M->>S: setDraft(feature + geometry mới)
+  S-->>F: editingFeatureAtom thay đổi → hiển thị số đo mới
+  U->>F: Nhấn "Lưu"
+  F->>F: validateFeatureInput() phía client
+  F->>H: save(feature)
+  H->>A: PUT /api/features/:id (GeoJSON)
+  A->>A: Kiểm tra lại dữ liệu, lưu
+  alt Hợp lệ
+    A-->>H: 200 OK + đối tượng đã lưu
+    H->>S: cập nhật featuresAtom, xóa draft, tăng listVersion
+    S-->>M: vẽ lại lớp đối tượng
+    H-->>U: Snackbar "Đã cập nhật đối tượng"
+  else Không hợp lệ
+    A-->>H: 400 + errors theo từng trường
+    H-->>F: ném lỗi → hiển thị dưới từng ô nhập
+  end

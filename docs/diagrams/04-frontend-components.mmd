@@ -1,0 +1,28 @@
+flowchart TB
+  APP[App.jsx<br/>bố cục chính] --> LIST[FeatureList<br/>tìm kiếm · lọc · phân trang]
+  APP --> EDITOR[EditorPanel] --> FORM[FeatureForm<br/>kiểm tra dữ liệu]
+  FORM --> ATTR[AttributeFields<br/>form động]
+  LIST --> ITEM[FeatureListItem<br/>React.memo]
+  APP --> MAP[MapView<br/>OpenLayers: Draw · Modify · Snap]
+  APP --> TB[MapToolbar<br/>chế độ thao tác]
+  APP --> NOTI[Notifier<br/>Snackbar]
+
+  subgraph STORE["Jotai store - src/store/atoms.js"]
+    A1[(featuresAtom)]
+    A2[(selectedFeatureIdAtom)]
+    A3[(draftFeatureAtom)]
+    A4[(editModeAtom)]
+    A5[(categoryFilterAtom)]
+    D1{{visibleFeaturesAtom<br/>atom dẫn xuất}}
+    D2{{editingFeatureAtom<br/>atom dẫn xuất}}
+  end
+  A1 & A5 --> D1
+  A1 & A2 & A3 --> D2
+  D1 --> MAP
+  D2 --> MAP & EDITOR
+  A4 --> MAP & TB
+  HOOK[useFeatureActions<br/>reloadAll · save · remove] --> A1
+  FORM --> HOOK
+  HOOK --> API[api/featureApi.js<br/>axios + interceptor] --> SRV[(REST API)]
+  LIST --> API
+  style STORE fill:#f3e5f5,stroke:#6a1b9a
